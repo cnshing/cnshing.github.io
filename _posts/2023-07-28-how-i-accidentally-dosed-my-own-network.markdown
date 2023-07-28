@@ -109,15 +109,7 @@ Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
 192.168.1.44	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.45	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.46	a6:2f:be:d4:65:46	(Unknown: locally administered)
-192.168.1.47	a6:2f:be:d4:65:46	(Unkmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 
-Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPOFFER(br0) 192.168.1.153 a6:2f:be:d4:65:46 
-Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPREQUEST(br0) 192.168.1.153 a6:2f:be:d4:65:46 
-Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPACK(br0) 192.168.1.153 a6:2f:be:d4:65:46 nginx
-Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPDECLINE(br0) 192.168.1.153 a6:2f:be:d4:65:46 
-Jul 11 20:29:46 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no address available
-Jul 11 20:29:53 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no address available
-Jul 11 20:30:07 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no address available
-Jul 11 20:30:26 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no nown: locally administered)
+192.168.1.47	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.48	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.49	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.50	a6:2f:be:d4:65:46	(Unknown: locally administered)
