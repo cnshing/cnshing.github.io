@@ -56,7 +56,7 @@ Nope. Now 192.168.1.90.
 
 Nada. One more time for 192.168.1.91...
 
-Now at this point I'm sweating bullets because something is clearly wrong, as last time I checked our DHCP reservation range was from 192.168.1.2 to 192.168.1.255, and we didn't have 253 unique devices in the house. Out of curiosity to see which IP addresses are open, I ran a blind arp(conversion hash table for IP to MAC addresses) scan:
+Now at this point I'm sweating bullets because something is clearly wrong, as last time I checked our DHCP reservation range was from 192.168.1.2 to 192.168.1.255, and we didn't have 254 unique devices in the house. Out of curiosity to see which IP addresses are open, I ran a blind arp(conversion hash table for IP to MAC addresses) scan:
 
 {% highlight bash %}
 cs@CS:~$ sudo arp-scan --localnet
