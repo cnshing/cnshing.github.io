@@ -5,7 +5,7 @@ date:   2023-07-28 04:13:13 +0000
 categories: homelab
 ---
 
-As the sole person tasked with configuring the network in the family, I was surprised when my brother one day told me that he was not able to access his banking website.
+As the sole person tasked with configuring the network in the family, I was surprised when my brother one night told me that he was not able to access his banking website.
 
 Upon hearing this I began to run the basic diagnostic steps and observed the following:
 
