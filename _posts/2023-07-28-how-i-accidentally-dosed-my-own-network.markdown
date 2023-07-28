@@ -51,7 +51,9 @@ Except that the assigned PC still didn't get an IP reservation and the PC still 
 Ok, maybe I was just unlucky. Maybe I accidentally typed an static ip that was already taken by another client. This time, let's try an static ip address of 192.168.1.88.
 
 No dice. Let's try 192.168.1.89.
+
 Nope. Now 192.168.1.90.
+
 Nada. One more time for 192.168.1.91...
 
 Now at this point I'm sweating bullets because something is clearly wrong, as last time I checked our DHCP reservation range was from 192.168.1.2 to 192.168.1.255, and we didn't have 253 unique devices in the house. Out of curiosity to see which IP addresses are open, I ran a blind arp(conversion hash table for IP to MAC addresses) scan:
@@ -107,7 +109,15 @@ Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
 192.168.1.44	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.45	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.46	a6:2f:be:d4:65:46	(Unknown: locally administered)
-192.168.1.47	a6:2f:be:d4:65:46	(Unknown: locally administered)
+192.168.1.47	a6:2f:be:d4:65:46	(Unkmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 
+Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPOFFER(br0) 192.168.1.153 a6:2f:be:d4:65:46 
+Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPREQUEST(br0) 192.168.1.153 a6:2f:be:d4:65:46 
+Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPACK(br0) 192.168.1.153 a6:2f:be:d4:65:46 nginx
+Jul 11 20:29:36 dnsmasq-dhcp[23025]: DHCPDECLINE(br0) 192.168.1.153 a6:2f:be:d4:65:46 
+Jul 11 20:29:46 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no address available
+Jul 11 20:29:53 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no address available
+Jul 11 20:30:07 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no address available
+Jul 11 20:30:26 dnsmasq-dhcp[23025]: DHCPDISCOVER(br0) a6:2f:be:d4:65:46 no nown: locally administered)
 192.168.1.48	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.49	a6:2f:be:d4:65:46	(Unknown: locally administered)
 192.168.1.50	a6:2f:be:d4:65:46	(Unknown: locally administered)
