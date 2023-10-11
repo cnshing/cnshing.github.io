@@ -29,7 +29,7 @@ linkedin_username: cnshing
 github_username:  cnshing
 
 # Build settings
-theme: minima
+remote_theme: JustGoodThemes/Scriptor-Jekyll-Theme
 plugins:
   - jekyll-feed
 
