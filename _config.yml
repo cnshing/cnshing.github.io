@@ -31,6 +31,9 @@ google_analytics: ""
 disqus: cnshing
 comments: true
 
+# Whether to show authors at the end of each post
+show_authors: false
+
 title: Shing Chan's Tech World
 email: chan.shing@protonmail.com
 domain: cnshing.github.io

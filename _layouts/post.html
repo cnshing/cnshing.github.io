@@ -27,6 +27,7 @@ layout: default
       <a target="_blank"
         href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}&amp;t={{ page.title | uri_escape }}" rel="noopener">Facebook</a>
     </div><!-- .share-post -->
+    {% if site.show_authors %}
     <div class="author-box">
       {% if site.data.author.image and site.data.author.image != "" %}
       <div class="author-avatar" style="background-image: url('{{ site.data.author.image }}')"><span class="screen-reader-text">{{ site.data.author.name }}'s Picture</span></div>
@@ -42,6 +43,7 @@ layout: default
         {% endif %}
       </div><!-- .author-details -->
     </div><!-- .author-box -->
+    {% endif %}
   </article><!-- .post -->
 
   {% if site.disqus and site.disqus != "" %}
