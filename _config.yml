@@ -18,6 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Site language
+lang: en-US
+
+# Favicon
+favicon: images/favicon.png
+
+# Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: ""
+
+# The shortname for your Disqus site to enable comments.
+disqus: cnshing
+comments: true
+
 title: Shing Chan's Tech World
 email: chan.shing@protonmail.com
 domain: cnshing.github.io
@@ -32,6 +45,7 @@ github_username:  cnshing
 remote_theme: JustGoodThemes/Scriptor-Jekyll-Theme
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,3 +66,40 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+
+# Site navigation - each item must have a title and a url.
+navigation:
+  - text: Home
+    url: /
+  - text: Readme
+    url: /posts/
+  - text: Contact Me
+    url: /contact/
+
+
+# Colors
+accent_color: '#2d72d9'
+
+# Site footer
+footer:
+  content: ""
+  has_social: true
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 3
+paginate_path: '/page:num/'
+
+# Permalinks
+permalink: /:title
+
+# Conversion
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
