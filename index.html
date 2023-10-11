@@ -4,6 +4,11 @@ layout: default
 
 <main class="main-content fadeInDown delay_075s">
 
+  {% if paginator.page == 1 %}
+    <!-- Assumes that about.markdown is succesfully generated in relative directory _site/about.html -->
+    {% include_relative _site/about.html %}
+  {% endif %}
+
   {% for post in paginator.posts %}
   <article class="post">
     <header class="post-header">
