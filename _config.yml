@@ -77,7 +77,7 @@ plugins:
 # Site navigation - each item must have a title and a url.
 navigation:
   - text: Sort by tags
-    url: /tags/
+    url: /tags
   - text: Contact
     url: /contact/
 
