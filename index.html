@@ -5,8 +5,9 @@ layout: default
 <main class="main-content fadeInDown delay_075s">
 
   {% if paginator.page == 1 %}
-    <!-- Assumes that about.markdown is succesfully generated in relative directory _site/about.html -->
-    {% include_relative ./_site/about.html %}
+    <!-- When _includes/about.html changes, the about parameters must be checked -->
+    {% assign about = site.pages | where: 'name', 'about.markdown' | first %}
+    {% include about.html title=about.title content=about.content %}
   {% endif %}
 
   {% for post in paginator.posts %}
