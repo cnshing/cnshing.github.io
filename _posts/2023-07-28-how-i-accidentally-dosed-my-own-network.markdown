@@ -3,6 +3,7 @@ layout: post
 title:  "How I accidentally DoSed my own network"
 date:   2023-07-28 04:13:13 +0000
 categories: homelab
+tags: [proxmox, networking, troubleshooting, arp, dhcp]
 ---
 
 As the sole person tasked with configuring the network in the family, I was surprised when my brother one night told me that he was not able to access his banking website.
