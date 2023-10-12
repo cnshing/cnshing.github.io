@@ -6,4 +6,4 @@ layout: page
 title: About me
 ---
 
-Hi there! This is my website where I document all things technology from software development, website design, networking systems to homelabs. The current pages are a bit rudimentary, so in the meantime I hope that you'll at least find something here worth reading. 
+Hi there! This is a website documenting all my related experiences with technology from software development, website design, networking systems and homelabs. My hope is to not only educationally inform about tech, but to also entertain you and share a bit more of myself along the way. Enjoy your stay!
