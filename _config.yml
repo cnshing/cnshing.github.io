@@ -83,7 +83,9 @@ navigation:
 
 
 # Colors
-accent_color: '#bcd4ef'
+accent_colors:
+  primary: '#3c77c1'
+  border: '#b6d8ff'
 
 # Site footer
 footer:
