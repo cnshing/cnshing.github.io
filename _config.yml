@@ -76,6 +76,8 @@ plugins:
 
 # Site navigation - each item must have a title and a url.
 navigation:
+  - text: Github
+    url: https://github.com/cnshing
   - text: Sort by tags
     url: /tags/
   - text: Contact
