@@ -10,6 +10,8 @@ tags: [proxmox, networking, guide, mac, bridge, vm]
 
 If you are like me, you may have had a couple of used laptops around the house and wondered if it was ever possible to extend the usability of these older devices by installing Proxmox and spinning some virtual machines. In fact, re-purposing my laptop as a Proxmox instance to setup local development servers was a keystone for my earlier development days, allowing convenient access to my coding tools without purchasing a new dedicated machine.
 
+<!--more-->
+
 Regardless of the reason, I would like to warn you that due to technical problems, using Proxmox on a wireless laptop can be a tricky endeavor to properly execute, especially for beginners with no prior knowledge of networking. In those cases, it would be best to simply follow the official Proxmox guide with the laptop connected via Ethernet, forever.
 
 For those without a faint of heart, you may continue reading to create a Proxmox laptop that can essentially be brought with you anywhere.

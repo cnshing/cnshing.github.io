@@ -10,6 +10,8 @@ As the sole person tasked with configuring the network in the family, I was surp
 
 Upon hearing this I began to run the basic diagnostic steps and observed the following:
 
+<!--more-->
+
 * The error code shown was ERR_ADDRESS_NOT_REACHABLE
 * The site was unreachable despite changing browsers and restarting the operating system
 * Pinging the IP address directly did not return any packets
