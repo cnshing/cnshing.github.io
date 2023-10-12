@@ -12,3 +12,4 @@ Notable changes include:
 Todo:
 1. Add a visual demostration of hiding author footers
 2. Decide whether or not to remove jekyll-feed
+3. Add customization options for animation snappyness
