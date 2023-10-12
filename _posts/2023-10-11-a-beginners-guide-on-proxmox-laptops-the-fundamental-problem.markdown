@@ -34,7 +34,7 @@ Each VM are given an unique identifier called a MAC address. These addresses are
 
 Under a regular Ethernet-wired Proxmox bridge, a VM called "A" will send data with its corresponding MAC address stamped on it. Since the host knows this data belongs to "A", it can intelligently use this MAC address information to forward the data to the router(Internet), similarly to how a deliveryman drives to a local UPS center to drop off a particular item before it gets shipped to its next intermediary destination.  
 
-Under a wireless Proxmox bridge, however, the router is extremely picky for which source addresses are allowed to be forwarded. As far as the router is concerned, it is aware of VM "A"'s forwarded source mac address, but this particular MAC has never been in the "approved list", so to speak, as all devices are that went through the proper authentication procedures of a secure, password-protected network. This is commonly why Proxmox laptops tends to be able to access the Internet through the host but the VMs themselves can't, since the host's MAC address were properly authenticated but the VMs's MAC addresses were not.
+Under a wireless Proxmox bridge, however, the router is extremely picky for which source addresses are allowed to be forwarded. As far as the router is concerned, it is aware of VM "A"'s forwarded source MAC address, but this particular MAC has never been in the "approved list", so to speak, as all devices undergoing the authentication procedures of a secure, password-protected network are. This is commonly why Proxmox laptops tends to be able to access the Internet through the host but the VMs themselves can't, since the host's MAC address were properly authenticated but the VMs's MAC addresses were not.
 
 ## But Why
 
