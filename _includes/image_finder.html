@@ -3,4 +3,8 @@
      {{IMG}}A.jpg
      saving some space writing out paths as a macro.
 -->
-{% assign IMG = page.path | split: '/' | last | split: '.' | reverse | shift | reverse | join: '.' | prepend: '/images/' | append: '/' %}
+{% assign path = page.path %}
+{% if include.page %}
+{% assign path = include.page.path %}
+{% endif %}
+{% assign IMG = path | split: '/' | last | split: '.' | reverse | shift | reverse | join: '.' | prepend: '/images/' | append: '/' %}

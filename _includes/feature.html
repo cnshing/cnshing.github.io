@@ -1,18 +1,31 @@
 {% include image_finder.html %}
 
-{% if page.feature_image and page.feature_image != "" %}
+<!-- By default, use the current page as its post. This can be overriden by the page parameter. -->
+{% if include.page % }
+    {% assign post = include.post %}
+{% else %}
+    {% assign post = page %}
+{% endif %}
+
+{% if post.feature_image and post.feature_image != "" %}
 <figure class="post-thumbnail image-card width-wide caption">
-    {% assign path =  IMG | append: page.feature_image  %}
+    {% assign path = IMG | append: post.feature_image %}
     {% assign search = site.static_files | where: "path", path %}
     <!-- When the feature image can't be found, it will try looking under the images directory
     https://stackoverflow.com/questions/16528783/check-for-existence-of-file-using-jekyll  -->
-    {% if search.size != 0 %}
-        <img src="{{ path }}" alt="{{ page.title }}">
-    {% else %}
-        <img src="{{ page.feature_image | relative_url }}" alt="{{ page.title }}">
-    {% endif%}
-    {% if page.feature_caption and page.feature_caption != "" %}
-        <figcaption class="caption-text">{{ page.feature_caption }}</figcaption>
+    {% if include.link %}
+        <a href="{{ include.link }}">
+    {% endif %}
+            {% if search.size != 0 %}
+            <img src="{{ path }}" alt="{{ post.title }}">
+            {% else %}
+            <img src="{{ post.feature_image | relative_url }}" alt="{{ post.title }}">
+            {% endif %}
+    {% if include.link %}
+        </a>
+    {% endif %}
+    {% if post.feature_caption and post.feature_caption != "" %}
+    <figcaption class="caption-text">{{ post.feature_caption }}</figcaption>
     {% endif %}
 </figure><!-- .post-thumbnail -->
 {% endif %}
