@@ -42,6 +42,11 @@ $palette: (
   bg:        #fbfbfb
 );
 
+// PSnappiness.
+{% assign snappiness = site.sass.animation_scale | default: 1.00 %}
+$snappiness: {{ snappiness }};
+
+
 // Imports
 @import "functions";
 @import "icons";

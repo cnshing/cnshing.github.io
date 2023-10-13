@@ -67,3 +67,10 @@
 @function _palette($keys...) {
   @return val($palette, $keys...);
 }
+
+/// Gets snappiness value.
+/// @param {} None.
+/// @return {string} Value.
+@function _snappiness() {
+  @return $snappiness;
+}
