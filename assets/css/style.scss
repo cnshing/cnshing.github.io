@@ -42,7 +42,7 @@ $palette: (
   bg:        #fbfbfb
 );
 
-// PSnappiness.
+// Snappiness.
 {% assign snappiness = site.sass.animation_scale | default: 1.00 %}
 $snappiness: {{ snappiness }};
 
