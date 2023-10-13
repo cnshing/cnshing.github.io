@@ -4,6 +4,8 @@ title:  "A Beginner's Guide on Proxmox Laptops: The Fundamental Problem"
 date:   2023-10-11 20:39:13 +0000
 categories: homelab
 tags: [proxmox, networking, guide, mac, bridge, vm]
+feature_image: laptop_server.jpg
+feature_caption: "A frankenstein laptop server"
 ---
 
 ## Incentives
