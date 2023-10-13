@@ -23,8 +23,8 @@
 }
 
 .fadeInDown {
-  -webkit-animation-duration: 0.7s * _snappiness();
-  animation-duration: 0.7s * _snappiness();
+  -webkit-animation-duration: 0.7s * _snappiness(animation);
+  animation-duration: 0.7s * _snappiness(animation);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
@@ -32,21 +32,21 @@
 }
 
 .delay_05s {
-  -webkit-animation-delay: 0.5s * _snappiness();
-  -moz-animation-delay: 0.5s * _snappiness();
-  animation-delay: 0.5s * _snappiness();
+  -webkit-animation-delay: 0.5s * _snappiness(delay);
+  -moz-animation-delay: 0.5s * _snappiness(delay);
+  animation-delay: 0.5s * _snappiness(delay);
 }
 
 .delay_075s {
-  -webkit-animation-delay: 0.75s * _snappiness();
-  -moz-animation-delay: 0.75s * _snappiness();
-  animation-delay: 0.75s * _snappiness();
+  -webkit-animation-delay: 0.75s * _snappiness(delay);
+  -moz-animation-delay: 0.75s * _snappiness(delay);
+  animation-delay: 0.75s * _snappiness(delay);
 }
 
 .delay_1s {
-  -webkit-animation-delay: 1s * _snappiness();
-  -moz-animation-delay: 1s * _snappiness();
-  animation-delay: 1s * _snappiness();
+  -webkit-animation-delay: 1s * _snappiness(delay);
+  -moz-animation-delay: 1s * _snappiness(delay);
+  animation-delay: 1s * _snappiness(delay);
 }
 
 @-webkit-keyframes fadeInDown {

@@ -69,8 +69,8 @@
 }
 
 /// Gets snappiness value.
-/// @param {} None.
+/// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _snappiness() {
-  @return $snappiness;
+@function _snappiness($keys...) {
+  @return val($snappiness, $keys...);
 }

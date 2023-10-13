@@ -43,9 +43,12 @@ $palette: (
 );
 
 // Snappiness.
-{% assign snappiness = site.sass.animation_scale | default: 1.00 %}
-$snappiness: {{ snappiness }};
-
+{% assign scale = site.sass.animation_scale | default: 1.00 %}
+{% assign delay = site.sass.animation_delay | default: scale %}
+$snappiness: (
+  animation: {{ scale }},
+  delay:    {{ delay }},
+);
 
 // Imports
 @import "functions";
