@@ -1,0 +1,6 @@
+<!-- Including this html will allow you to access your file's own image folder under the \images directory.
+     For example, a file called "A.md" with a jpg under "\images\A\A.jpg" can rewrite the path as
+     {{IMG}}A.jpg
+     saving some space writing out paths as a macro.
+-->
+{% assign IMG = page.path | split: '/' | last | split: '.' | reverse | shift | reverse | join: '.' | prepend: 'images\' | append: '\' %}
