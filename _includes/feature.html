@@ -1,15 +1,15 @@
+{% include image_finder.html %}
 
 {% if page.feature_image and page.feature_image != "" %}
 <figure class="post-thumbnail image-card width-wide caption">
-    {% assign path =  page.feature_image | relatve_url %}
-    {% assign img = site.static_files | where: "path", path %}
+    {% assign path =  IMG | append: page.feature_image  %}
+    {% assign search = site.static_files | where: "path", path %}
     <!-- When the feature image can't be found, it will try looking under the images directory
     https://stackoverflow.com/questions/16528783/check-for-existence-of-file-using-jekyll  -->
-    {% if img.size != 0 %}
-        <img src="{{ src }}" alt="{{ page.title }}">
+    {% if search.size != 0 %}
+        <img src="{{ path }}" alt="{{ page.title }}">
     {% else %}
-        {% include image_finder.html %}
-        <img src="{{ IMG | append: page.feature_image }}" alt="{{ page.title }}">
+        <img src="{{ page.feature_image | relative_url }}" alt="{{ page.title }}">
     {% endif%}
     {% if page.feature_caption and page.feature_caption != "" %}
         <figcaption class="caption-text">{{ page.feature_caption }}</figcaption>
