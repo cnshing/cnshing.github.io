@@ -108,4 +108,4 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-  animation_scale: 0.5 #Multiply animation duration/delay by this amount
+  animation_scale: 0.73 #Multiply animation duration/delay by this amount
