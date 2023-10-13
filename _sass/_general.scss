@@ -243,7 +243,8 @@ video {
   margin: 0 0 1.66667em;
 }
 
-.image-card figcaption {
+.image-card figcaption, 
+img + em { // Supports markdown image and captions
   color: _palette(meta);
   font-size: 0.77778rem;
   padding-top: 0.5em;
@@ -252,7 +253,8 @@ video {
 
 @media only screen and (min-width: 851px) {
   .width-full img,
-  .width-wide img {
+  .width-wide img,
+  p img { //Replace with img:has(+ em) once wide support for "has" is adopted
     margin-left: calc(425px - 50vw);
     margin-right: calc(425px - 50vw);
     max-width: none;
@@ -261,7 +263,8 @@ video {
 }
 
 @media only screen and (min-width: 971px) {
-  .width-wide img {
+  .width-wide img,
+  p img {
     margin-left: -60px;
     margin-right: -60px;
     width: 880px;
