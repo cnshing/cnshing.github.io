@@ -5,7 +5,7 @@ Jekyll [website](cnshing.github.io) based off [Scriptor](https://github.com/Just
 Notable changes include:
 * About me will always start at the front of the page, allowing users to get a preview of the blog before scrolling down and reading the posts
 * An option to show/hide the author footers at the end of each post, since it can get repetitive especially for single author blogs
-* Easily organize and reference post images with per-post image directory support
+* Easily organize and reference post images with per-post image directory and markdown support
 * Additional caption options for feature images
 * A seperate page border colour option for situations where the selected colour looks fine for the border but is not sufficient for text constrast
 * Increased navigation text constrast to a ratio of at least 4.5 to meet accessibility requirements
