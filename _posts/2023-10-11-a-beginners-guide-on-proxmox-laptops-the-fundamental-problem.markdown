@@ -7,7 +7,7 @@ tags: [proxmox, networking, guide, mac, bridge, vm]
 feature_image: laptop_server.jpg
 feature_caption: "A frankenstein laptop server"
 ---
-
+{% include image_finder.html %}
 ## Incentives
 
 If you are like me, you may have had a couple of used laptops around the house and wondered if it was ever possible to extend the usability of these older devices by installing Proxmox and spinning some virtual machines. In fact, re-purposing my laptop as a Proxmox instance to setup local development servers was a keystone for my earlier development days, allowing convenient access to my coding tools without purchasing a new dedicated machine.
@@ -31,6 +31,9 @@ For a VM to be able to visits a page on the Internet, the VM first must communic
 But since communication from VM to Host are an essential requirement for the VM to function, some intelligent and formal process must be created to efficiently facilitate this connection. 
 
 This formal process by which a host and a set of VMs talk over a network in Proxmox is called bridging. In a bridging scenario, there exists two locations by which the only way to transverse between them is through one central point called the bridge. In this example, the host bridges network traffic between the VMs and the rest of the Internet, as all VMs must talk to the host before talking to the Internet, and the Internet must talk to the host before being able to talk to the VMs. 
+
+![Proxmox Bridge]({{IMG}}ProxmoxBridge.svg)
+*An simplified example of a Proxmox bridge*
 
 Each VM are given an unique identifier called a MAC address. These addresses are particularly useful for distinguishing network traffic from one another. Specifically, network traffic will always contain a source and destination MAC addresses to know where the data came from and where it should go. Think of the source and destination as a return and recipient address of a letter, respectively. 
 
