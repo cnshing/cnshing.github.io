@@ -14,6 +14,8 @@ html {
   border: 15px solid _palette(frame);
   box-sizing: border-box;
 
+  /* This allows scroll to be succesfully disabled without affecting page widths via position: fixed
+  See https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome*/
   overflow-y: overlay;
   scrollbar-gutter: stable;
 
