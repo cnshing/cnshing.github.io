@@ -25,7 +25,7 @@
         </a>
     {% endif %}
     {% if post.feature_caption and post.feature_caption != "" %}
-    <figcaption class="caption-text">{{ post.feature_caption }}</figcaption>
+    <figcaption class="caption-text">{{ post.feature_caption | markdownify }}</figcaption>
     {% endif %}
 </figure><!-- .post-thumbnail -->
 {% endif %}
