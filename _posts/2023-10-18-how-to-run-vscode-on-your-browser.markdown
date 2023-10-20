@@ -38,6 +38,8 @@ Our solution of choice will be to implement a browser-accessible VSCode on a ser
 
 3. Inaccessible GPUs. This can be a deal-breaker for those applying A.I. models. VSCode's performance is as good as the server hardware can support, so if your development use case needs the "big guns", then it will be both practical and cost-efficient to use whatever local computer you have in hand. 
 
+4. The Desktop and Web versions are not perfectly 1-to-1 due to their inherent target differences. This could mean a specific niche extension may not be available or function weirdly. See [limitations](https://code.visualstudio.com/docs/editor/vscode-web#_limitations) for details.
+
 An excellent example where coding over the web can be especially helpful is web development, as website changes can be ephemerally accessed through the same public IP allowing other collaborators to see these changes in real time. 
 
 ## Requirements
