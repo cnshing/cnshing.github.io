@@ -51,7 +51,7 @@ This supposed restriction is interestingly a designed security feature for most 
 But wireless data is quite litteraly in the air and can be intercepted by anyone at anytime. I mean think about it: an malicious actor can theoretically break into your network just by chilling in the car parked outside your house with a laptop and you would be none the wiser. 
 
 ## What now
-So now the router's a bouncer and it's not letting any of the non-VIP VMs in. How do we get around it? In the next article, we will discuss ARP and how ARP can be used to help us accomplish our goals. Be sure to let the information slowly digest in your brain, because having a solid understanding of why wireless Proxmox can be difficult will help you in the next steps.
+So now the router's a bouncer and it's not letting any of the non-VIP VMs in. How do we get around it? In the [next article]({% link _posts/2023-10-16-a-beginners-guide-on-proxmox-laptops-arp-proxy.markdown %}), we will discuss ARP and how ARP can be used to help us accomplish our goals. Be sure to let the information slowly digest in your brain, because having a solid understanding of why wireless Proxmox can be difficult will help you in the next steps.
 
 ### References:
 
