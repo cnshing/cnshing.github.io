@@ -9,7 +9,9 @@ feature_caption: "An ARP conflict where two MAC addresses claim to be the same I
 ---
 {% include image_finder.html %}
 
-In the last post, we mentioned a particular issue when it comes to wirelessly connecting our virtual machines to the Internet under a Proxmox host. Specifically, our previous method of directly informing the router of each VM's MAC address is automatically rejected as they have not made any attempt to properly authenticate with the router, even if the Proxmox device hosting all the VMs did.
+In the [last post]({% link _posts/2023-10-11-a-beginners-guide-on-proxmox-laptops-the-fundamental-problem.markdown %}), we mentioned a particular issue when it comes to wirelessly connecting our virtual machines to the Internet under a Proxmox host. Specifically, our previous method of directly informing the router of each VM's MAC address is automatically rejected as they have not made any attempt to properly authenticate with the router, even if the Proxmox device hosting all the VMs did.
+
+<!--more-->
 
 Now, the network can be a complicated system of interconnected physical links and data abstraction[^1], all of which abide by a set of known and predictable rules. In fact, the very problem of our Proxmox Laptop is itself a rule to prevent unauthorized access via the physical radio wireless waves of a network. This complexity in networking allows a variety of methods to use a particular rule from a particular part of the whole network ecosystem to accomplish the same goal.
 
